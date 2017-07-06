@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="个人中心"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:background="#ADD8E6"
+        android:paddingLeft="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#bfbfbf"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="#ADD8E6"
+       android:padding="10dp">
+
+       <!--<ImageView-->
+           <!--android:id="@+id/edit_image"-->
+           <!--android:layout_width="70dp"-->
+           <!--android:layout_height="70dp"-->
+           <!--android:layout_margin="15dp"-->
+           <!--android:clickable="true"-->
+           <!--android:scaleType="fitXY"-->
+           <!--android:onClick="setImage"-->
+           <!--android:background="#aaa"/>-->
+       <!--app:border_color="@color/colorAccent"-->
+
+       <com.example.tool.CircleImageView
+           android:id="@+id/edit_image"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_marginTop="20dp"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/head"
+           app:border_color="#aaa"
+           app:border_width="1dp"/>
+
+       <TextView
+           android:id="@+id/user_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           android:layout_gravity="center_horizontal"
+           android:textSize="25sp"
+           android:text="Lily"/>
+
+       </LinearLayout>
+
+    <Button
+        android:id="@+id/person_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:text="个人资料"/>
+
+    <Button
+        android:id="@+id/my_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:text="我的好友"/>
+
+    <Button
+        android:id="@+id/chang_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:text="修改密码"/>
+
+    <Button
+        android:id="@+id/chang_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:text="切换账号"/>
+
+    <Button
+        android:id="@+id/exit_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="#ff0000"
+        android:text="退出"/>
+
+   </LinearLayout>

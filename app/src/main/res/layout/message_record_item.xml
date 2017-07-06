@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical">
+
+    <com.example.myapplication.CircleImageView
+        android:id="@+id/head_image"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/friends_list_name"
+        android:layout_toRightOf="@+id/head_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_below="@+id/friends_list_name"
+        android:layout_toRightOf="@+id/head_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777777"
+        android:text="message"
+        android:singleLine="true"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

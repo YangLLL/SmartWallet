@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#bfbfbf"/>
+
+    <com.example.tool.CircleImageView
+        android:id="@+id/friends_head_image"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/head" />
+    <TextView
+        android:id="@+id/friends_list_name"
+        android:layout_toRightOf="@+id/friends_head_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:text="name"
+        android:textSize="25sp"/>
+
+
+</RelativeLayout>
